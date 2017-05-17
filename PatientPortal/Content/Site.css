@@ -4,11 +4,17 @@
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
+.home-body-content {
     padding-right: 15px;
     padding-left: 15px;    
     background-image: url('images/IMAGE.png');
 }
+.body-content {
+    padding-top:50px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 
 
 /* Override the default bootstrap behavior where horizontal description lists 

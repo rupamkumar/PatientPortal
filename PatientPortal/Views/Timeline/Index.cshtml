@@ -2,44 +2,49 @@
 @{
     ViewBag.Title = "Index";
 }
+<script src="~/Scripts/google/loader.js"></script>
+<script src="~/Scripts/local/timelinedummy.js"></script>
 
-<h2>Index</h2>
+<div class="row body-content">
 
-<Form name="fhome" ng-app="timelineMain" ng-controller="timelineVModel" >
+    <form>
+    @*<Form name="fhome" ng-app="timelineMain" ng-controller="timelineVModel">*@
+        <div id="Timeline" style="height: 450px;"></div>
+        @*<div class="row" ng-repeat="pt in patients" style="margin-top:0px;padding-top:0px;">
+            <table>
+                <tr>
+                    <td>
+                        <div>{{pt.PatientId}}</div>
+                    </td>
+                    <td>
+                        <div>{{pt.PatientGivenName}} </div>
+                    </td>
+                    <td>
+                        <div>{{pt.PatientSurName}} </div>
+                    </td>
+                </tr>
+            </table>
+        </div>*@
+        <p></p>
+        @*<div class="row" ng-repeat="pt in timelines" style="margin-top:0px;padding-top:0px;">
+            <table>
+                <tr>
+                    <td>
+                        <div>{{pt.TimelineId}}</div>
+                    </td>
+                    <td>
+                        <div>{{pt.ClinicalCategoryId}} </div>
+                    </td>
+                    <td>
+                        <div>{{pt.PatientId}} </div>
+                    </td>
+                </tr>
+            </table>
+        </div>*@
 
-    <div class="row" ng-repeat="pt in patients" style="margin-top:0px;padding-top:0px;">
-        <table>
-            <tr>
-                <td>
-                    <div>{{pt.PatientId}}</div>
-                </td>
-                <td>
-                    <div>{{pt.PatientGivenName}} </div>
-                </td>
-                <td>
-                    <div>{{pt.PatientSurName}} </div>
-                </td>
-            </tr>
-        </table>        
-    </div>
-    <p></p>
-    <div class="row" ng-repeat="pt in timelines" style="margin-top:0px;padding-top:0px;">
-        <table>
-            <tr>
-                <td>
-                    <div>{{pt.TimelineId}}</div>
-                </td>
-                <td>
-                    <div>{{pt.ClinicalCategoryId}} </div>
-                </td>
-                <td>
-                    <div>{{pt.PatientId}} </div>
-                </td>
-            </tr>
-        </table>
-    </div>
+    </Form>
 
-</Form>
+</div>
 <script src="~/Scripts/angular.js"></script>
 <script src="~/Scripts/angular-route.js"></script>
-<script src="~/Scripts/local/timeline.js"></script>
+@*<script src="~/Scripts/local/timeline.js"></script>*@
