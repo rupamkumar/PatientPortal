@@ -1,12 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "TimeLine";
 }
 <script src="~/Scripts/google/loader.js"></script>
 <script src="~/Scripts/local/timelinedummy.js"></script>
 
 <div class="row body-content">
-
+    <h3 class="text-left">@Html.ViewBag.Title</h3>
     <form>
     @*<Form name="fhome" ng-app="timelineMain" ng-controller="timelineVModel">*@
         <div id="Timeline" style="height: 450px;"></div>
